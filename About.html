@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <h1>Company Story</h1>
+    <h3>Jane Doe is the CEO of the Only Ferns company, the reason she started the company is so <br>that people who love plants can get them sent to their door. She works with farms that grow <br>flowers and plants and through the Only Ferns website you buy the plants and the farms can<br> get extra profit. Only Ferns has been in business since September, 2020, and their goal <br>is to help farms acquire extra money. Jane Doe has had experience with working with people <br>who own farmland and grow plants on that land, and knows that it's hard to find people who <br>are willing to come out and buy the plants themselves, so she started this business. </h3>
+
+
+    <h1>USP</h1>
+    <h3>There are people out in the world who want to have plants around their house or growing on<br> their front lawns, but don't want to go out and buy the plants from gardeners who grow <br>the plants on their farms. That's why through the Only Ferns website, you order the plants<br> and they get sent to you from the gardeners on the farm without you needing to go <br>out and get them yourself. You sign up and get the plants sent straight to you.
+    </h3>
+
+    <h1>Customer Reviews</h1>
+    <h3 class="iwanttoquit">
+      The Team At Only Ferns Makes You Feel Special For Ordering Their Products<br>
+Everything was perfect, even though my request was a last minute change<br>
+Jane was the lady that I worked with,and she made sure that I understood everything and made it clear that<br> if I changed my mind in the middle of our discussion, that I would be able to<br>
+If you would like to support local gardeners who work with farm land, then order from Only Ferns
+
+    </h3>
+
+
+
+<div class="bruh">
+    <div class="img-slider">
+        <div class="slide">
+            <img src="images/batched/Lights_350.jpg" alt="bruh">
+        </div>
+        <div class="slide">
+            <img src="images/weeds.jpg" alt="bruh">
+        </div>
+        <div class="slide">
+            <img src="images/batched/Lights_350.jpg" alt="bruh">
+        </div> 
+         
+    
+
+    
+  
+
+
+     
+     <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 10000);
+          }
+          repeater();
+        }
+        repeat();
+        </script> 
+</div>
+
+    
+</body>
+</html>

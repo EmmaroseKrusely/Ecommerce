@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Ferns</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+    
+</head>
+<body>
+  <div class="container1">
+  <div class="background">
+     <script src="text.js"></script> 
+    <script src='javascript/text.js'></script>
+<header>
+    <!-- <h1>Only Ferns</h1> -->
+     <img src="images/batched/LogoAgain.png" class="Logo">
+     
+</header>
+
+<div class="div3">
+   <button class="shop"><a href="Ecom.html"> Shop Now</a></button>
+   <button class="about"><a href="About.html">About Page</a></button>
+<button class="contact"><a href="contant.html">Contact Page</a></button>
+  
+      </div>
+    
+      <div class="mission">
+        <h1>Improve Your Mood With Plants, It's Science</h1>
+      </div>
+    
+ 
+     <!-- <div class="img-slider">
+        <div class="slide">
+            <img src="images/batched/Lights_350.jpg" alt="bruh">
+        </div>
+        <div class="slide">
+            <img src="images/weeds.jpg" alt="bruh">
+        </div>
+        <div class="slide">
+            <img src="images/batched/Lights_350.jpg" alt="bruh">
+        </div> 
+         
+    
+
+    
+  
+
+
+     
+     <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+    
+        // Javascript for image slider manual navigation
+        var manualNav = function(manual){
+          slides.forEach((slide) => {
+            slide.classList.remove('active');
+    
+            btns.forEach((btn) => {
+              btn.classList.remove('active');
+            });
+          });
+    
+          slides[manual].classList.add('active');
+          btns[manual].classList.add('active');
+        }
+    
+        btns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i;
+          });
+        });
+    
+        // Javascript for image slider autoplay navigation
+        var repeat = function(activeClass){
+          let active = document.getElementsByClassName('active');
+          let i = 1;
+    
+          var repeater = () => {
+            setTimeout(function(){
+              [...active].forEach((activeSlide) => {
+                activeSlide.classList.remove('active');
+              });
+    
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
+            i++;
+    
+            if(slides.length == i){
+              i = 0;
+            }
+            if(i >= slides.length){
+              return;
+            }
+            repeater();
+          }, 10000);
+          }
+          repeater();
+        }
+        repeat();
+        </script> 
+
+
+
+
+
+
+ <div>
+  <button class="shop"><a href="Ecom.html"> Shop Now</a></button>
+      </div> -->
+
+
+
+ <footer>
+    <div class="contacts"> <h2>--Only Ferns-- <br> --(330) 625-4233-- </h2></div>
+  <div class="email"> <h2>--756 Youngstown Warren Rd, Niles, OH 44446-- <br> --Onlyferns@gmail.com--</h2></div>
+ </footer>  </div>
+</body>
+</html>
